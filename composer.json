@@ -1,19 +1,44 @@
 {
-    "name": "pion/laravel-support-collection",
-    "description": "The support classes for the Laravels collection",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Martin Kluska",
-            "email": "martin.kluska@imakers.cz"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Pion\\Support\\Collection\\": "src/"
-        }
-    },
-    "require": {
-        "illuminate/support": "^6 || ^7 || ^8 || ^9"
+  "name": "pion/laravel-support-collection",
+  "description": "The support classes for the Laravels collection",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Kluska",
+      "email": "martin.kluska@imakers.cz"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pion\\Support\\Collection\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">= 8.0",
+    "illuminate/support": "^6 || ^7 || ^8 || ^9 || ^10 || ^11"
+  },
+  "require-dev": {
+    "strictphp/conventions": "^1.0"
+  },
+  "scripts": {
+    "analyse": "./vendor/bin/phpstan",
+    "check": [
+      "@lint",
+      "@analyse"
+    ],
+    "lint": [
+      "@lint:fix",
+      "@lint:upgrade"
+    ],
+    "lint:check": "./vendor/bin/ecs",
+    "lint:fix": "./vendor/bin/ecs --fix",
+    "lint:stan": "./vendor/bin/phpstan",
+    "lint:upgrade": "vendor/bin/rector process",
+    "lint:upgrade:check": "vendor/bin/rector process --dry-run"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
+  }
 }

@@ -1,0 +1,61 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Class Pion\\\\Support\\\\Collection\\\\GroupedCollection extends generic class Illuminate\\\\Support\\\\Collection but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/GroupedCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$key of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:put\\(\\) expects \\(int\\|string\\), string\\|null given\\.$#"
+			count: 1
+			path: src/GroupedCollection.php
+
+		-
+			message: "#^Call to an undefined method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:get\\(\\)\\.$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:__call\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:__construct\\(\\) has parameter \\$items with generic class Illuminate\\\\Support\\\\Collection but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:addChildsItems\\(\\) has parameter \\$collection with generic class Illuminate\\\\Support\\\\Collection but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:addChildsItems\\(\\) has parameter \\$key with no type specified\\.$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:buildCollection\\(\\) return type with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Method Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:getCollection\\(\\) return type with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function call_user_func_array expects callable\\(\\)\\: mixed, array\\{Illuminate\\\\Support\\\\Collection, string\\} given\\.$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Property Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:\\$collection with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/NestedObjectCollection.php
+
+		-
+			message: "#^Property Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\:\\:\\$groupedCollection \\(static\\(Pion\\\\Support\\\\Collection\\\\NestedObjectCollection\\)\\) does not accept Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\), Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\), mixed\\>\\>\\.$#"
+			count: 1
+			path: src/NestedObjectCollection.php
